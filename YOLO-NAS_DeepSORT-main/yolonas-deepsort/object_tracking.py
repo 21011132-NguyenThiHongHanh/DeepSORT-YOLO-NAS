@@ -76,7 +76,7 @@ def main(_argv):
 
         # Lặp qua các kết quả phát hiện
         for data in final_prediction:
-            # Extract the confidence (i.e., probability) associated with the detection
+            # trích xuất độ tin cậy (xác suất) liên quan đến việc nhận diện đối tượng.
             confidence = data[4]
 
             # Lọc các phát hiện yếu bằng cách đảm bảo độ tin cậy lớn hơn ngưỡng tối thiểu và với class_id
