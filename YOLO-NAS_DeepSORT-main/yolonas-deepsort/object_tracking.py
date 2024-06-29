@@ -91,7 +91,8 @@ def main(_argv):
             xmin, ymin, xmax, ymax = int(data[0]), int(data[1]), int(data[2]), int(data[3])
             class_id = int(data[5])
             
-            # Add the bounding box (x, y, w, h), confidence, and class ID to the results list
+            # thêm các thông số bao gồm tọa độ và kích thước của hộp bao quanh (x, y, w, h), 
+            # độ tin cậy (confidence), và mã nhận dạng của lớp (class ID) vào danh sách kết quả.
             results.append([[xmin, ymin, xmax - xmin, ymax - ymin], confidence, class_id])
 
         # Cập nhật tracker với các phát hiện mới
